@@ -8,6 +8,6 @@ It will be on github pages.<br>
 And this will be the record of developing E-Book.<br>
 <br>
 <br>
-I'm currently doing personal project named 'newjeans_project'<br>
+I'm currently doing personal project named  '<a href="https://github.com/jun-yub-kim/Newjeans_project">Newjeans_project</a>'<br>
 <br>
 I can also connect my project at here.<br>
