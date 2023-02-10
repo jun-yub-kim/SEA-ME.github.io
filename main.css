@@ -10,14 +10,16 @@
 #popup-content1 {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 10%;
   transform: translateY(-50%);
   /*transform: translate(-50%,-50%);*/
   background-color: white;
   padding: 20px;
   text-align: center;
-  width: 50%;
+  width: 90%;
 }
+
+
 
 #popup2 {
   position: absolute;
@@ -36,8 +38,9 @@
   background-color: white;
   padding: 20px;
   text-align: center;
-  width: 50%;
+  width: 85%;
 }
+
 
 #popup1.fade-in {
   animation: fadeIn 1.5s;

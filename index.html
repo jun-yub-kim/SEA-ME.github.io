@@ -2,39 +2,23 @@
 <html>
 <head>
   <link rel="stylesheet" type="text/css" href="main.css">
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>  
-  <script>
-    $(document).ready(function(){
-      $("#show-popup_all").click(function(){
-        $("#popup1").show();
-        $("#popup2").show();
-      });
-      $("#show-popup1").click(function(){
-        $("#popup1").show();
-      });
-      $("#show-popup2").click(function(){
-        $("#popup2").show();
-      });
-      $("#hide-popup2").click(function(){
-        $("#popup2").hide();
-      });
-    });
-  </script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="main.js"></script>
 </head>
 <body>
   <div id="popup1" style="display:none">
     <div id="popup-content1">
-      <p>This is a pop-up_1!</p>
-      <button id="hide-popup2">Close</button>
+      <img id="image" src="main.gif" width="auto" height="300px">
+      <button id="arrow">Next</button>
     </div>
   </div>
   <div id="popup2" style="display:none">
     <div id="popup-content2">
-      <p>This is a pop-up_2!</p>
-      <button id="hide-popup2">Close</button>
+      <img id="image" src="main.gif" width="auto" height="300px">
+      <button id="arrow">Next</button>
+      <button id="hide-popup_all">Close</button>
     </div>
   </div>
   <button id="show-popup_all"> Show Pop-up</button>
-
 </body>
 </html>

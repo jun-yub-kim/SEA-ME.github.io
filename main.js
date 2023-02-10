@@ -1,24 +1,24 @@
-const openBookButton = document.querySelector("#open-book");
-const book = document.querySelector("#book");
+var images = ["img24.jpg", "img25.jpg", "img26.jpg", "img27.jpg"];
+var currentImageIndex = 0;
 
-openBookButton.addEventListener("click", function () {
-  book.classList.remove("closed");
-  book.classList.add("open");
-});
-
-const closeBookButton = document.querySelector("#close-book");
-
-closeBookButton.addEventListener("click", function () {
-  book.classList.remove("open");
-  book.classList.add("closed");
-});
-
-
-$(document).ready(function(){
-  $("#show-popup").click(function(){
-    $("#popup").show();
+$(document).ready(function() {
+  $("#arrow").click(function(){
+    currentImageIndex++;
+    if (currentImageIndex >= images.length) {
+      currentImageIndex = 0;
+    }
+    $("#image").attr("src", images[currentImageIndex]);
+    // hide popup1 and show popup2
   });
-  $("#hide-popup").click(function(){
-    $("#popup").hide();
+
+  $("#hide-popup_all").click(function(){
+    $("#popup1").hide();
+    $("#popup2").hide();
+  });
+
+  $("#show-popup_all").click(function(){
+    $("#popup1").show();
+    $("#popup2").show();
   });
 });
+
