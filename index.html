@@ -1,12 +1,40 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>####</title>
-        <link href="new.css" rel="stylesheet">
-        </head>
-    <body>
+<head>
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>  
+  <script>
+    $(document).ready(function(){
+      $("#show-popup_all").click(function(){
+        $("#popup1").show();
+        $("#popup2").show();
+      });
+      $("#show-popup1").click(function(){
+        $("#popup1").show();
+      });
+      $("#show-popup2").click(function(){
+        $("#popup2").show();
+      });
+      $("#hide-popup2").click(function(){
+        $("#popup2").hide();
+      });
+    });
+  </script>
+</head>
+<body>
+  <div id="popup1" style="display:none">
+    <div id="popup-content1">
+      <p>This is a pop-up_1!</p>
+      <button id="hide-popup2">Close</button>
+    </div>
+  </div>
+  <div id="popup2" style="display:none">
+    <div id="popup-content2">
+      <p>This is a pop-up_2!</p>
+      <button id="hide-popup2">Close</button>
+    </div>
+  </div>
+  <button id="show-popup_all"> Show Pop-up</button>
 
-123123
-    </body>
-    </html>
+</body>
+</html>

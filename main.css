@@ -1,0 +1,53 @@
+#popup1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: rgba(251, 151, 151, 0.5);
+}
+
+#popup-content1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%);
+  /*transform: translate(-50%,-50%);*/
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  width: 50%;
+}
+
+#popup2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;  
+  background-color: rgba(34, 18, 18, 0.5);
+}
+
+#popup-content2 {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  width: 50%;
+}
+
+#popup1.fade-in {
+  animation: fadeIn 1.5s;
+}
+
+#popup2.fade-in {
+  animation: fadeIn 1.5s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
