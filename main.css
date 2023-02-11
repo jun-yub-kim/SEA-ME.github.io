@@ -10,15 +10,15 @@
 #popup-content1 {
   position: absolute;
   top: 50%;
-  left: 10%;
+  left: 20%;
   transform: translateY(-50%);
   /*transform: translate(-50%,-50%);*/
   background-color: white;
   padding: 20px;
   text-align: center;
-  width: 90%;
+  width: 80%;
+  height: 80%;
 }
-
 
 
 #popup2 {
@@ -35,11 +35,37 @@
   top: 50%;
   left: 0;
   transform: translateY(-50%);
-  background-color: white;
+  background-color: rgb(238, 238, 92);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /*padding: 20px; 책 사이 실선 필요하면 추가하기 */
+  text-align: center;
+  width: 80%;
+  height: 80%;
+}
+
+#popup-content2_exit {
+  position: absolute;
+  top: calc(50%-30px);
+  left: 0;
+  transform: translateY(-50%);
+  background-color: gray;
   padding: 20px;
   text-align: center;
   width: 85%;
+  height: 80%;
 }
+
+@media (max-width: 768px) {
+  #popup2 {
+    display: none;
+  }
+  #popup-content2 {
+    display: none;
+  }
+}
+
+
 
 
 #popup1.fade-in {
@@ -53,4 +79,10 @@
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
+}
+
+@media (max-width: 768px) {
+  #popup2 {
+    display: none;
+  }
 }
