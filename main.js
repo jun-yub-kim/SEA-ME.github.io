@@ -1,4 +1,4 @@
-var images = ["img24.jpg", "img25.jpg", "img26.jpg", "img27.jpg"];
+var images = ["img/img24.jpg", "img/img25.jpg", "img/img26.jpg", "img/img27.jpg"];
 var currentImageIndex = 0;
 
 $(document).ready(function() {
