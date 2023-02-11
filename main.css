@@ -10,14 +10,14 @@
 #popup-content1 {
   position: absolute;
   top: 50%;
-  left: 20%;
+  left: 40%;
   transform: translateY(-50%);
   /*transform: translate(-50%,-50%);*/
   background-color: white;
-  padding: 20px;
   text-align: center;
-  width: 80%;
-  height: 80%;
+  width: 60%;
+  height: 90%;
+  background-image: url("/covid/covid-001.jpg");
 }
 
 
@@ -36,12 +36,14 @@
   left: 0;
   transform: translateY(-50%);
   background-color: rgb(238, 238, 92);
-  padding-top: 20px;
-  padding-bottom: 20px;
-  /*padding: 20px; 책 사이 실선 필요하면 추가하기 */
   text-align: center;
-  width: 80%;
-  height: 80%;
+  width: 60%;
+  height: 90%;
+  background-image: url("/covid/covid-002.jpg");
+  background-size: cover;
+  /*padding-top: 20px;
+  padding-bottom: 20px;
+  padding: 20px; 책 사이 실선 필요하면 추가하기 */
 }
 
 #popup-content2_exit {
@@ -56,12 +58,15 @@
   height: 80%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 680px) {
   #popup2 {
     display: none;
   }
   #popup-content2 {
     display: none;
+  }
+  #popup1{
+    background-color: blue;
   }
 }
 
@@ -81,8 +86,53 @@
   to { opacity: 1; }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 980px) {  
+  #popup1 {
+    position: absolute;
+    background-color: blue;
+    width: 100%;
+    height: 100%;
+    left: 0;
+  }
+
+  #popup-content1 {
+    left: 50%;
+    top : 2%;
+    height: 92%;
+    transform: translateX(-50%);
+  }
+
+  #image1 {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+
   #popup2 {
+    background-color: transparent;
+  }
+
+  #popup-content2 {
     display: none;
+  }
+
+  #arrow1 {
+    display: none;
+  }
+}
+
+#image1 {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+}
+
+@media only screen and (max-width: 980px) {
+  #image1 {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
   }
 }

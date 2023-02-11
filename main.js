@@ -1,4 +1,9 @@
-var images = ["img/img24.jpg", "img/img25.jpg", "img/img26.jpg", "img/img27.jpg"];
+var prev_images = ["img/img24.jpg", "img/img25.jpg", "img/img26.jpg", "img/img27.jpg"];
+var images = [];
+for (let i = 1; i <= 310; i++) {
+  let paddedIndex = ("00" + i).slice(-3);
+  images.push(`covid/covid-${paddedIndex}.jpg`);
+}
 var currentImageIndex = 0;
 
 $(document).ready(function() {
