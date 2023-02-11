@@ -1,5 +1,8 @@
 # SEA-ME.github.io
 
+<img src="daily_result/02.11.gif" width="600" height="300">
+<br>-recent result-<br>
+<br><br><br>
 
 After complete all the SEA-ME projects, I have free times about 2 weeks in germany.<br>
 I decided to publish guidlines of SEA-ME as an E-Book style.<br>
